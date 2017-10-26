@@ -26,4 +26,7 @@ In Azure CLI:
 ```
 az login
 az webapp deployment source config --name cognitiveservicespipeline --resource-group CognitiveServicesPipeline --repo-url https://github.com/stevenalexander/CognitiveServicesPipelineWebApp.git --branch master --manual-integration
+
+# sync for updates
+az webapp deployment source sync --name cognitiveservicespipeline --resource-group CognitiveServicesPipeline
 ```

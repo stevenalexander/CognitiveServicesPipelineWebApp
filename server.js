@@ -1,6 +1,8 @@
-const Koa = require('koa')
-const app = module.exports = new Koa()
+'use strict'
+var http = require('http')
+var port = process.env.PORT || 1337
 
-app.use(async ctx => { ctx.body = 'Hello World' })
-
-if (!module.parent) app.listen(process.env.PORT || 3000)
+http.createServer(function (req, res) {
+  res.writeHead(200, { 'Content-Type': 'text/plain' })
+  res.end('Hello World2\n')
+}).listen(port)

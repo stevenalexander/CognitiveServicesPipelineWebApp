@@ -4,10 +4,10 @@
   "description": "Cognitive Services Pipeline Web App",
   "scripts": {
     "start": "node server",
-    "test": "standard && mocha test --exit"
+    "test": "standard"
   },
   "engines": {
-    "node": "8.1.x"
+    "node": "~6.10.x"
   },
   "repository": {
     "type": "git",
@@ -16,13 +16,5 @@
   "license": "MIT",
   "author": {
     "name": "Steven Alexander"
-  },
-  "dependencies": {
-    "koa": "^2.3.0"
-  },
-  "devDependencies": {
-    "mocha": "^4.0.1",
-    "standard": "^10.0.3",
-    "supertest": "^3.0.0"
   }
 }
